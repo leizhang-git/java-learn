@@ -21,7 +21,7 @@ public class ZookeeperConfig {
     private static final Logger log = LoggerFactory.getLogger(ZookeeperConfig.class);
 
     @Autowired
-    private ZookeeperParam zookeeperParam;
+    private com.leiz.zookeeper.config.ZookeeperParam zookeeperParam;
 
     private static CuratorFramework cline = null;
 

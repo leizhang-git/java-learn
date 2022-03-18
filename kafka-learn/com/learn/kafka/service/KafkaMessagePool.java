@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 @Component
 public class KafkaMessagePool {
 
-    private Queue<KafkaMessage> messageQueue;
+    private Queue<com.learn.kafka.service.KafkaMessage> messageQueue;
 
     @PostConstruct
     public void init() {
@@ -24,7 +24,7 @@ public class KafkaMessagePool {
      * 入队
      * @param message
      */
-    public void sendMessages(KafkaMessage message) {
+    public void sendMessages(com.learn.kafka.service.KafkaMessage message) {
         messageQueue.add(message);
     }
 
@@ -32,7 +32,7 @@ public class KafkaMessagePool {
      * 出队
      * @return
      */
-    public KafkaMessage getMessage() {
+    public com.learn.kafka.service.KafkaMessage getMessage() {
         return messageQueue.poll();
     }
 }
