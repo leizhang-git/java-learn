@@ -3,6 +3,9 @@ package com.lei.pool;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * 不建议使用！！！
+ */
 public class ExecutorsTest {
     public static void main(String[] args) {
 
